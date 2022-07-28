@@ -1,0 +1,71 @@
+<config>
+<!-- Salvage More From Workstations -->
+
+	<!-- Solar Bank -->		<!-- No Schematic Normally Only Sold -->
+	<append xpath="/blocks/block[@name='cntCollapsedSolarbank']" >
+		<drop event="Destroy" name="solarbank" prob=".50" count="1" tag="salvageHarvest"/>
+		<drop event="Harvest" name="solarCell" prob=".25" count="1,3" tag="salvageHarvest"/>
+		</append>
+		
+	<!-- Battery Bank -->
+	<append xpath="/blocks/block[@name='cntCollapsedBatterybank']" >
+		<drop event="Destroy" name="batterybank" prob=".15" count="1" tag="salvageHarvest"/>
+		<drop event="Destroy" name="batterybankSchematic" prob=".55" count="1" tag="salvageHarvest"/>
+		<drop event="Harvest" name="carBattery" prob=".25" count="1" tag="salvageHarvest"/>
+		</append>
+		
+	<!-- Generators -->
+	<append xpath="/blocks/block[@name='questGeneratorSmall']" >
+		<drop event="Destroy" name="generatorbank" prob=".45" count="1" tag="salvageHarvest"/>
+		<drop event="Destroy" name="generatorbankSchematic" prob=".80" count="1" tag="salvageHarvest"/>
+		<drop event="Harvest" name="smallEngine" prob=".25" count="1" tag="salvageHarvest"/>
+		</append>
+
+	<append xpath="/blocks/block[@name='questGeneratorLarge']" >
+		<drop event="Destroy" name="generatorbank" prob=".50" count="1" tag="salvageHarvest"/>
+		<drop event="Destroy" name="generatorbankSchematic" prob=".90" count="1" tag="salvageHarvest"/>
+		<drop event="Harvest" name="smallEngine" prob=".25" count="1" tag="salvageHarvest"/>
+		</append>
+		
+	<append xpath="/blocks/block[@name='cntCollapsedGeneratorbank']" >
+		<drop event="Destroy" name="generatorbank" prob=".25" count="1" tag="salvageHarvest"/>
+		<drop event="Destroy" name="generatorbankSchematic" prob=".75" count="1" tag="salvageHarvest"/>
+		<drop event="Harvest" name="smallEngine" prob=".25" count="1" tag="salvageHarvest"/>
+		</append>
+
+	<!-- Cememt Mixer -->
+	<append xpath="/blocks/block[@name='cntCollapsedCementMixer']" >
+		<drop event="Destroy" name="cementMixer" prob=".25" count="1" tag="salvageHarvest"/>
+		<drop event="Destroy" name="cementMixerSchematic" prob=".85" count="1" tag="salvageHarvest"/>
+		<drop event="Destroy" name="smallEngine" prob=".25" count="1" tag="salvageHarvest"/>
+		</append>
+
+	<!-- Workbench -->
+	<append xpath="/blocks/block[@name='cntCollapsedWorkbench']" >
+		<drop event="Destroy" name="workbench" prob=".10" count="1" tag="salvageHarvest"/>
+		<drop event="Destroy" name="workbenchSchematic" prob=".75" count="1" tag="salvageHarvest"/>
+		<drop event="Destroy" name="meleeToolIronSetSchematic" prob=".25" count="1" tag="salvageHarvest"/>
+		<drop event="Destroy" name="meleeToolRepairT1ClawHammer" prob=".15" count="1" tag="salvageHarvest"/>
+		<drop event="Destroy" name="meleeToolSalvageT1WrenchSchematic" prob=".25" count="1" tag="salvageHarvest"/>
+		<drop event="Destroy" name="meleeToolSalvageT1Wrench" prob=".15" count="1" tag="salvageHarvest"/>
+		</append>
+		
+	<!-- Forge -->
+	<append xpath="/blocks/block[@name='cntCollapsedForge']" >
+		<drop event="Destroy" name="forge" prob=".15" count="1" tag="salvageHarvest"/>
+		<drop event="Destroy" name="forgeSchematic" prob=".75" count="1" tag="salvageHarvest"/>
+		<drop event="Destroy" name="toolBellows" prob=".10" count="1" tag="salvageHarvest"/>
+		<drop event="Destroy" name="toolBellowsSchematic" prob=".40" count="1" tag="salvageHarvest"/>
+		<drop event="Destroy" name="toolForgeCrucible" prob=".06" count="1" tag="salvageHarvest"/>
+		<drop event="Destroy" name="toolForgeCrucibleSchematic" prob=".25" count="1" tag="salvageHarvest"/>
+		<drop event="Destroy" name="toolAnvil" prob=".10" count="1" tag="salvageHarvest"/>
+		<drop event="Destroy" name="toolAnvilSchematic" prob=".40" count="1" tag="salvageHarvest"/>
+		</append>
+
+	<!-- Chem Station -->
+	<append xpath="/blocks/block[@name='cntCollapsedChemistryStation']" >
+		<drop event="Destroy" name="chemistryStation" prob=".15" count="1" tag="salvageHarvest"/>
+		<drop event="Destroy" name="chemistryStationSchematic" prob=".75" count="1" tag="salvageHarvest"/>
+		<drop event="Destroy" name="toolBeaker" prob=".35" count="1" tag="salvageHarvest"/>
+		</append>
+	</config>

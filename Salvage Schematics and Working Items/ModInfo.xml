@@ -1,0 +1,15 @@
+	<xml>
+		<ModInfo>
+			<Name value="Salvage More From Workstations"/>
+			<Description value="Salvage Working Workstations and/or Appropriate Tools/Schematics From 
+			- Forge
+			- Cement Mixer
+			- Workbench
+			- Chemistry Station
+			- Generator
+			- Battery Bank (Including Higher Chance From Quest Versions)
+			- Solar Bank (Higher Drop Chance Since There Arent Schematics)"/>
+			<Author value="risingphoenixsky"/> 
+			<Version value="0.1"/>
+		</ModInfo>
+	</xml>
